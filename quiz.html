@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Score Counter</title>
+</head>
+<body>
+    <h1>Score: <span id="score">0</span></h1>
+    <button onclick="incrementScore()">
+      <img src ="PerfectCookie.jpg">
+    </button>
+    <div id="message"></div>
+
+    <script>
+        let score = 0;
+
+        function incrementScore() {
+            if (score < 100) {
+                score++;
+                document.getElementById("score").textContent = score;
+                if (score === 100) {
+                  window.alert("Good job!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
